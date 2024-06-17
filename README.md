@@ -2,7 +2,8 @@
 # CT-WebSDK-Flutter
 
 ## Overview
-CT-WebSDK-Flutter is a Flutter application integrated with CleverTap's Web SDK for user analytics and engagement.
+CT-WebSDK-Flutter is a Flutter application integrated with CleverTap's Web SDK for user
+analytics and engagement.
 
 ## Getting Started
 To get started with CT-WebSDK-Flutter, follow these steps:
