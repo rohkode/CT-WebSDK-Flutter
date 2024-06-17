@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="./assets/packages/clevertap_plugin/assets/clevertap.js"></script>
+  
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ct_flutter_rk">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>ct_flutter_rk</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+  <script src="main.dart.js" type="application/javascript"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('firebase-messaging-sw.js')
+      .then(function(registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+      }).catch(function(error) {
+        console.log('Service Worker registration failed:', error);
+      });
+    clevertap.privacy.push({useIP: true}); //call the flag to true, if the user agrees to share their IP data
+    }
+  </script>
+
+<!-- Web Inbox -->
+  <div id="main-content" class="body"></div>
+  <div id="inbox" style="position: fixed; top: 10px; right: 40px; width: 100px; text-align: right; z-index: 1000;">
+    <img src="https://icones.pro/wp-content/uploads/2022/02/icone-de-cloche-rouge.png" alt="Web Inbox" style="width: 40px; height: 40px; vertical-align: middle;">
+  </div>
+
+<!-- Web Native Display -->
+<div id="native-display-container" class="native-display-container" style="position: fixed; bottom: 30px; right: 40px; width: 350px; height: 200px; z-index: 1000; text-align: right;">
+  <img class="img-native-display" src="https://logowik.com/content/uploads/images/clevertap5229.jpg" width="350" height="200" alt="Web Native Display Fallback Image" />
+</div>
+
+</body>
+</html>
