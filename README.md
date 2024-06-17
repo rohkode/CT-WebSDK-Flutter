@@ -1,17 +1,33 @@
-# ct_flutter_rk
+```markdown
+# CT-WebSDK-Flutter
 
-A new Flutter project.
+## Overview
+CT-WebSDK-Flutter is a Flutter application integrated with CleverTap's Web SDK for user analytics and engagement.
 
 ## Getting Started
+To get started with CT-WebSDK-Flutter, follow these steps:
 
-This project is a starting point for a Flutter application.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RohitKhandka/CT-WebSDK-Flutter.git
+   ```
+2. Open the project in your preferred Flutter development environment (e.g., Visual Studio Code, Android Studio).
 
-A few resources to get you started if this is your first Flutter project:
+3. Install dependencies by running the following command in the project directory:
+   ```bash
+   flutter pub get
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+4. Configure CleverTap:
+   - Initialize CleverTap with your CleverTap account ID in the `init` method of your main file (`main.dart`).
+   - Enable Web Push notifications using the `enableWebPush` method in the `initState` method of your main file (`main.dart`). Configure the push notification settings accordingly.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# CT-WebSDK-Flutter
+## Usage
+Once the project is set up, you can use the following features:
+
+- **OnUserLogin Method:** Identify users with their name, email, identity, and phone number using the `onUserLogin` method.
+- **Custom Event:** Record custom events with properties such as product name and category using the `recordEvent` method.
+- **Charged Event:** Record charged events with detailed information such as the total amount, payment mode, and items purchased using the `recordChargedEvent` method.
+
+## Contributing
+Contributions to CT-WebSDK-Flutter are welcome! If you find any issues or have suggestions for improvements, feel free to submit a pull request.
