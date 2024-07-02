@@ -10,7 +10,7 @@ To get started with CT-WebSDK-Flutter, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/RohitKhandka/CT-WebSDK-Flutter.git
+   git clone https://github.com/rohkode/CT-WebSDK-Flutter.git
    ```
 2. Open the project in your preferred Flutter development environment (e.g., Visual Studio Code, Android Studio).
 
